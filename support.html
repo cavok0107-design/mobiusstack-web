@@ -3,51 +3,84 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>技术支持 · QARPilot</title>
+<title>技术支持 · Mobius Stack（QARPilot / AeroLingo）</title>
+<meta name="description" content="莫比乌斯栈科技（昆明）有限责任公司移动应用 QARPilot 与 AeroLingo 的技术支持与常见问题。">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
   <div class="wrap">
-    <div class="brand">QARPilot</div>
+    <div class="brand">Möbius&nbsp;Stack</div>
     <nav><a href="index.html">首页</a><a href="about.html">关于我们</a><a href="privacy.html">隐私政策</a><a href="support.html">支持</a></nav>
   </div>
 </header>
 <main class="wrap">
   <h1 class="doc">技术支持与帮助</h1>
-  <p class="meta">莫比乌斯栈科技（昆明）有限责任公司 ｜ 更新时间：2026 年 10 月 12 日</p>
+  <p class="meta">莫比乌斯栈科技（昆明）有限责任公司 ｜ 适用应用：QARPilot、AeroLingo ｜ 更新时间：2026 年 10 月 12 日</p>
 
   <div class="note">
-    遇到问题或想提需求？直接发邮件到
-    <a href="mailto:honglin.li@mobiusstack.com">honglin.li@mobiusstack.com</a>，
-    请附上<strong>应用版本号、iOS 版本、机型</strong>和问题截图，我们通常在 1–2 个工作日内回复。
+    遇到问题或想提需求？请发邮件到
+    <a href="mailto:honglin.li@mobiusstack.com">honglin.li@mobiusstack.com</a>。
+    为便于定位问题，请附上<strong>应用名称与版本号、iOS 版本、机型</strong>，以及问题截图；我们通常在 1–2 个工作日内回复。
   </div>
 
-  <h2>常见问题</h2>
+  <h2>一、QARPilot</h2>
 
-  <h3 class="sub">1. 数据会同步到云端吗？</h3>
-  <p>默认保存在本机。开启同步后使用你本人的 iCloud 账号，我们不经手你的账号密码。</p>
+  <h3 class="sub">1. QARPilot 是什么？</h3>
+  <p>面向飞行员与航空从业者的 QAR 事件复盘工具：导入飞行数据文件 → 查看事件结论、证据链、数据质量 → 用轨迹回放与航向/风向盘复看关键阶段，并可生成结构化的辅助讲评。</p>
 
-  <h3 class="sub">2. 换手机后数据还在吗？</h3>
-  <p>开启同步的情况下可恢复；未开启同步时数据仅存于原设备，请在旧设备上先导出备份。</p>
+  <h3 class="sub">2. 支持哪些文件格式？</h3>
+  <p>CSV、XLS、XLSX，以及已导出的 SampleCard JSON。选择文件后由解析服务返回结构化结果，App 只负责呈现，不在界面层重新计算规则或评分。</p>
 
-  <h3 class="sub">3. 应用崩溃 / 打不开怎么办？</h3>
-  <p>先尝试：① 更新到最新版本；② 强制重启应用；③ 系统设置 → 通用 → iPhone 储存空间 → 找到 QARPilot → 卸载后重装（数据若已同步不会丢失）。仍无法解决请联系我们。</p>
+  <h3 class="sub">3. 导入后一直解析不出来 / 解析失败怎么办？</h3>
+  <p>解析由解析服务完成，因此需要该服务可达（本机或同一局域网内）。请按序排查：① 确认解析服务已启动；② 确认手机与运行服务的电脑在同一网络；③ 确认所选文件属于支持格式且未损坏；④ 在应用设置的解析服务地址里核对地址是否正确。若仍失败，请把文件名类型与错误提示截图发给我们。</p>
 
-  <h3 class="sub">4. 如何删除账号与全部数据？</h3>
-  <p>应用内「设置 → 账号 → 删除账号」，或邮件联系我们；我们将在 30 日内完成删除或匿名化处理。</p>
+  <h3 class="sub">4. AI 辅助讲评需要联网吗？数据会发到哪里？</h3>
+  <p>该功能为可选项：需要你在设置中自行填写第三方 API 地址与密钥后才会向你指定的接口发送当前样本数据。<strong>我们不经手、不保存</strong>相关请求与密钥；不启用该功能时，离线查看结论、证据与轨迹回放均不受影响。详见<a href="privacy.html">隐私政策</a>。</p>
 
-  <h3 class="sub">5. 是否收费、是否有内购？</h3>
-  <p>关于是否收费及是否包含内购，请以 App Store 应用页面显示的信息为准；如后续调整，我们会在应用内与 App Store 页面同步说明。</p>
+  <h3 class="sub">5. 我的数据存在哪里？怎么删除？</h3>
+  <p>样本索引与设置保存在设备本地。你可以在样本库中删除已保存的样本；卸载应用会一并清除应用沙盒内的数据。</p>
 
-  <h3 class="sub">6. 反馈功能建议</h3>
-  <p>欢迎邮件说明使用场景与期望，我们会纳入迭代计划。</p>
+  <h3 class="sub">6. 是否收费、是否有内购？</h3>
+  <p>是否收费及是否包含内购，以 App Store 应用页面显示的信息为准；如后续调整，我们会在应用内与 App Store 页面同步说明。</p>
+
+  <h2>二、AeroLingo</h2>
+
+  <h3 class="sub">1. AeroLingo 是什么？</h3>
+  <p>面向民航飞行员英语（ICAO 4/5 等级与 PEPEC 备考方向）的学习工具：按天的学习任务、句子跟读练习（录音与回听）、间隔重复复习与学习进度看板。</p>
+
+  <h3 class="sub">2. 需要联网吗？离线能用吗？</h3>
+  <p>离线优先：已下载的内容、跟读录音与播放、复习计划与进度记录都可以在无网络环境下正常使用，网络不可用不会阻塞学习流程。</p>
+
+  <h3 class="sub">3. 为什么要麦克风权限？会不会被偷偷录音？</h3>
+  <p>麦克风仅用于录制<strong>你主动发起的跟读练习</strong>，用于回听与自评；<strong>只有在你点击"开始录音"后才会录音</strong>，不会在后台自动录音。你可以在系统设置中关闭麦克风权限，关闭后其余功能仍可使用。</p>
+
+  <h3 class="sub">4. 我的录音保存在哪里？怎么删除？</h3>
+  <p>录音保存在应用自身的沙盒目录中，只有本应用可访问，不会自动上传。你可以在「设置 → 录音与隐私」查看本地录音记录并删除；卸载应用会一并清除。</p>
+
+  <h3 class="sub">5. 在线评测是什么？会上传我的录音吗？</h3>
+  <p>在线评测是可选的语音评测通道：如启用，App 会在上传前单独请求你的授权并说明用途与删除规则，音频仅用于本次训练分析，云端最多保留 24 小时；你可以拒绝或随时撤销授权。当前版本默认以离线方式运行，不使用在线评测。</p>
+
+  <h3 class="sub">6. AeroLingo 是官方考试软件吗？</h3>
+  <p>不是。AeroLingo 是<strong>独立的备考学习工具，非官方应用</strong>，与民航局、ICAO、PEPEC 主办或承办机构均无隶属或合作关系；应用内的评测结果仅作为训练反馈，不代表也不预测任何官方考试结果。</p>
+
+  <h3 class="sub">7. 应用崩溃 / 打不开怎么办？</h3>
+  <p>请先尝试：① 更新到最新版本；② 强制重启应用；③ 重启设备；④ 需要时卸载后重装（本地数据会一并清除，请先确认无需要保留的录音）。若仍无法解决，请把机型、系统版本与复现步骤发给我们。</p>
+
+  <h3 class="sub">8. 是否收费、是否有内购？</h3>
+  <p>是否收费及是否包含内购，以 App Store 应用页面显示的信息为准。</p>
+
+  <h2>三、通用</h2>
+  <h3 class="sub">如何反馈问题或提功能建议？</h3>
+  <p>发邮件到下方邮箱，说明使用场景、期望效果与复现步骤即可，我们会纳入迭代计划。</p>
 
   <h2>联系方式</h2>
   <table>
     <tr><th>支持邮箱</th><td><a href="mailto:honglin.li@mobiusstack.com">honglin.li@mobiusstack.com</a></td></tr>
     <tr><th>运营主体</th><td>莫比乌斯栈科技（昆明）有限责任公司</td></tr>
+    <tr><th>统一社会信用代码</th><td>91530100MAKN3C8W63</td></tr>
     <tr><th>开发者</th><td>Mobius Stack Technology (Kunming) Co., Ltd.</td></tr>
+    <tr><th>隐私政策</th><td><a href="privacy.html">mobiusstack.com/privacy.html</a></td></tr>
   </table>
 </main>
 <footer class="wrap">
